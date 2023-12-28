@@ -13,7 +13,13 @@
     <nav>
         <ul>
             <li><a href="#">Accueil</a></li>
-            <li><a href="#">Produits</a></li>
+            <li><a href="#">Produits</a>
+                <ul>
+                    <li><a href="produit/Addproduit.html">Ajouter un Produit</a></li>
+                    <li><a href="produit/EditProduit.html">Éditer un Produit</a></li>
+                    <li><a href="produit/DeliteProduit.html">Supprimer un Produit</a></li>
+                </ul>
+            </li>
             <li><a href="#">Panier</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
@@ -28,7 +34,51 @@
 
 <section id="featured-products">
     <h2>Produits en vedette</h2>
-    <!-- Insérez ici les produits en vedette avec des liens vers les pages individuelles -->
+
+    <div class="product">
+        <img src="product1.jpg" alt="Produit 1">
+        <h3>Nom du Produit 1</h3>
+        <p>Description courte du produit 1.</p>
+        <a href="product1.html">Voir plus</a>
+    </div>
+
+    <div class="product">
+        <img src="product2.jpg" alt="Produit 2">
+        <h3>Nom du Produit 2</h3>
+        <p>Description courte du produit 2.</p>
+        <a href="product2.html">Voir plus</a>
+    </div>
+
+    <!-- Ajoutez autant de produits en vedette que nécessaire -->
+
+</section>
+
+
+
+<section id="contact">
+    <h2>Contactez-nous</h2>
+
+    <!-- Formulaire de contact -->
+    <form action="contact_process.php" method="post">
+        <label for="name">Nom:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Envoyer</button>
+    </form>
+
+    <!-- Informations de contact -->
+    <div class="contact-info">
+        <h3>Nos Coordonnées</h3>
+        <p><strong>Adresse:</strong> 123 Rue de la Boutique, Ville</p>
+        <p><strong>Téléphone:</strong> +1 234 567 890</p>
+        <p><strong>Email:</strong> info@boutiqueenligne.com</p>
+    </div>
 </section>
 
 <footer>
